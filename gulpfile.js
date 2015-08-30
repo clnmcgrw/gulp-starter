@@ -58,6 +58,8 @@ onError = function(err) {
 gulp.task('serve', ['sass'], function() {
 	
 	browserSync.init({
+		//use proxy option if running web server
+		//ex -> proxy: settings.server 
 		server: {
       baseDir: settings.root
     },
