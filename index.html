@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>GulpStrap // SCSS Starter Project</title>
+
+	<script src="assets/js/modernizr.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/screen.css">
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="assets/js/support/respond.js"></script>
+	<script type="text/javascript" src="assets/js/support/selectivizr-min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<script>
+	(function() {
+		var req = new XMLHttpRequest(); req.open("GET", "assets/svg/sprite.svg", true); req.send();
+		req.onload = function(e) { var div = document.createElement('div'); div.innerHTML = req.responseText;
+			div.style.display = 'none'; div.id = 'svg-sprites'; document.body.insertBefore(div, document.body.childNodes[0]); }
+	})();
+	</script>
+	
+	<header class="site-header" role="banner">
+		<div class="container-fluid">
+			<h1>Static Starter Project</h1>
+			<small>Gulp, Sass, SVG, Browsersync, Cool Stuff</small>
+		</div>
+	</header>
+	<main class="site-main" role="mainContentofPage">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<h4>Start Your Front-End Build in Seconds:</h4>
+					<ol>
+						<li>Clone this project</li>
+						<li>Run <code>npm install</code></li>
+						<li><code>gulp</code> and build away!</li>
+					</ol>
+					<a href="#0" class="btn btn-primary btn-lg">
+						<svg class="svgicon"><use xlink:href="#social-github"></svg>
+						Check it on Github</a>
+				</div>
+				<div class="col-md-4">
+					<h4>What's Inside?</h4>
+					<ul>
+						<li>Gulp Build System</li>
+						<li>Browsersync for style injecting &amp; live reloads</li>
+						<li>SCSS with sourcemaps</li>
+						<li>JS concat/minify &amp; linting</li>
+						<li>SVG <code>&lt;symbol&gt;</code> icon system</li>
+						<li>Image optimization &amp; resizing</li>
+						<li>Polyfills for IE8 support (if needed)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="site-footer" role="contentInfo">
+		<div class="container-fluid">
+			2015 Magnetic Creative
+		</div>
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>');</script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+body {
+	cursor: default;
+}
+
+
+
+.btn {
+	@include transition(all .2s ease);
+	.svgicon {
+		width: 1.2em;
+		height: 1.2em;
+		display: inline-block;
+		margin-right: .2em;
+		margin-bottom: -.2em;
+	}
+}
+
+.btn-primary {
+	.svgicon {
+		fill: #fff;
+	}
+}
+
+
+
+
+.site-header {
+	text-align: center;
+	padding: 35px 0;
+	border-bottom: 1px solid darken($body-bg, 5%);
+	h1 {
+		text-transform: uppercase;
+		font-size: 1.5em;
+		margin: 0 0 5px;
+	}
+	small {
+		color: $gray-light;
+	}
+}
+
+
+
+.site-main {
+	padding: 40px 0 120px;
+	.btn {
+		margin-top: 15px;
+	}
+}
+
+
+
+
+.site-footer {
+	padding: 35px 0;
+	text-align: center;
+	border-top: 1px solid darken($body-bg, 5%);
+}
